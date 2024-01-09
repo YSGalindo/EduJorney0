@@ -1,0 +1,141 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img
+    style="height: 100px; margin-left: 20px;"
+    src="assets/edulogo.png"
+    alt=""
+  />
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></ul>
+    <div class="form-inline my-2 my-lg-0">
+      <p style="color: white" *ngIf="mostrarNombre">{{nombreUsuario}}</p> 
+      <button class="btn btn-login my-2 my-sm-0" (click)="showLogin()">Iniciar Sesión</button>
+    </div>
+  </div>
+</nav>
+<div *ngIf="mostrarLogin" class="login-container">
+  <app-login></app-login>
+</div>
+<div class="page-content">
+  <h1 class="blue-text">Para todos tus retos,</h1>
+  <h1>prepárate en Edujoney</h1>
+  <p class="separation-space mb6">La comunidad de aprendizaje en línea</p>
+  <p class="mb6">donde desarrollas tus habilidades y</p>
+  <p class="mb6">potencias tu crecimiento profesional.</p>
+  <p class="separation">¿Qué quieres aprender?</p>
+  <div class="input-group" style="width: 500px">
+    <input
+      class="form-control border-end-0 border rounded-pill search-design"
+      type="text"
+      [value]="txtBuscar"
+      id="search-input"
+    />
+    <span class="input-group-append">
+      <button
+        (click)="searchEducation()"
+        class="btn btn-outline-secondary search-design border-start-0 border rounded-pill ms-n3"
+        type="button"
+      >
+        <i class="fa fa-search"></i>
+      </button>
+    </span>
+  </div>
+  <div *ngIf="mostrarLinks" class="link-container">
+    <ul>
+      <li *ngFor="let item of resultadosBusquedas"><a href="" target="_blank">{{item}}</a></li>
+    </ul>
+  </div>
+  <div class="marquee-wrapper" style="margin-top: 30px">
+    <div class="marquee">
+      <div class="marquee__content">
+        <button class="btn btnStyle" *ngFor="let item of nombresCursos">{{item}}</button>
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom: 60px">
+    <h2 class="h2style">Especialízate en las áreas con mayor demanda laboral</h2>
+    <div class="card-container">
+      <div *ngFor="let item of dataCursos" class="card border-light mb-3" style="max-width: 18rem; background-color: #1c1726;">
+        <div class="card-body text-white">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <p class="card-text">Créditos: {{ item.creditos }}</p>
+          <p class="card-text">Duración: {{ item.duracion }}</p>
+          <p class="card-text">Descripción: {{ item.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 footer-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="footer-child">
+          <img
+            src="assets/edulogo.png"
+            style="height: 100px;"
+            alt=""
+          />
+          <p class="wrap-text">
+            Transformamos la economía de nuestros países entrenando a la próxima
+            generación de profesionales en tecnología.
+          </p>
+          <div class="fa-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="footer-child">
+          <ul>
+            <li>Liderazgo</li>
+            <li>Inglés</li>
+            <li>Marketing</li>
+            <li>Negocios y Emprendimiento</li>
+            <li>Desarrollo e Ingeniería</li>
+            <li>Startups</li>
+            <li>Contenido Digital</li>
+            <li>Diseño y UX</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div>
+          <p>Certificadores oficiales en tecnologías</p>
+          <div class="logo-container">
+            <img
+              src="https://static.platzi.com/static/images/footer/logo-ibm.a5ea724e8e90.png"
+              alt=""
+              class="ibm-logo"
+            />
+            <img
+              src="https://static.platzi.com/static/images/footer/logo-unity.5a9d7d021565.png"
+              alt=""
+              class="footer-icon"
+            />
+          </div>
+          <div>
+            <p style="margin-top: 40px">Reconocidos y premiados por</p>
+            <div class="logo-container">
+              <img
+                src="https://static.platzi.com/static/images/footer/yc.886de721d220.png"
+                alt=""
+                class="y-margin"
+              />
+              <img
+                src="https://static.platzi.com/static/images/footer/asugsv.8d8dcbc1fa78.png"
+                alt=""
+                class="footer-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
