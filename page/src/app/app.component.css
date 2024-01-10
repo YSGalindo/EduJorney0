@@ -1,0 +1,257 @@
+.navbar {
+    background-color: #13161c !important;
+}
+
+.dropdown {
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+.btn-login {
+    color: white;
+    margin: 0px 10px;
+}
+
+.btn-signup {
+    color: black;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+.dropdown-menu {
+    background-color: #2b323c;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color:#000033;
+}
+
+.mtop {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-text {
+    color: #1666a8;
+}
+
+.separation-space {
+    margin-top: 20px;
+}
+
+.mb6 {
+    color: #dbdee3;
+}
+
+.separation {
+    margin-top: 70px;
+}
+
+.separation-down {
+    margin-bottom: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fa-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.wrap-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-icon {
+    height: 30px;
+    margin: 0px 20px;
+}
+
+.ibm-logo {
+    height: 30px;
+    margin-left: -10px;
+}
+
+.y-margin {
+    height: 30px;
+}
+
+.search-design {
+    background-color: #1e2228;
+    color: #757575;
+}
+
+.Categories-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.CategoriesAdapter {
+    color: #fff;
+}
+
+
+.Categories-category-item {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1c1726;
+    border: 1px solid #2d323a;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 200px;
+    column-gap: 1rem;
+    grid-template-columns: auto 1fr;
+}
+
+.Categories-category-item-logo {
+    height: 30px;
+}
+
+.Categories-category-item-icon {
+    height: 30px;
+}
+
+.CategoriesAdapter .Categories-category-item:after {
+    color: #c4c8ce;
+    font-size: 1.5rem!important;
+}
+
+.CategoriesAdapter .Categories-category-item {
+    align-items: center;
+    border: 1px solid #2d323a!important;
+    border-radius: 12px;
+    cursor: pointer;
+    line-height: 24px;
+    max-width: none;
+    position: relative;
+    white-space: pre-line;
+}
+
+.CategoriesAdapter .Categories-list li:nth-child(1n) a {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(https://static.platzi.com/cdn-cgi/image/width=1024,quality=85,format=auto/media/uploads/lp_bg_1_90140bfd39.png)!important;
+    background-position: 50%;
+}
+
+.marquee-wrapper {
+    overflow: hidden;
+  }
+  
+  .marquee {
+    display: flex;
+    animation-name: marquee;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transform: translateX(0);
+    img {
+      padding: 1em;
+    }
+  }
+  
+  @keyframes marquee {
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);}
+  }
+
+  a { color: white; }
+
+  .CategoriesAdapter .Categories-category-item-info-wraper {
+    padding: 10px;
+}
+
+.btnStyle {
+    background-color: #0e1114;
+    color: #b5b8bc;
+    margin: 7px;
+}
+
+.btnStyle:hover {
+    color: #0ee286;
+}
+
+.footer {
+    background-color: #1e2228;
+}
+
+h2{text-align: center;}
+
+.h2style {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.marquee {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+  }
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    max-width: 218px;
+    min-width: 218px;
+  }
+
+.login-container {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

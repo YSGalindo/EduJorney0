@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="loginForm">
+      <label style="margin-right: 28px;" for="username">Usuario:</label>
+      <input type="text" id="username" formControlName="username" />
+      <br />
+  
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" formControlName="password" />
+      <br />
+      <br />
+  
+      <button class="btn btn-login my-2 my-sm-0" type="button" (click)="signIn()">Iniciar Sesión</button>
+    </form>
+  </div>
